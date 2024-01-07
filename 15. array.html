@@ -1,0 +1,60 @@
+
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Array </title>
+</head>
+<body>
+<body>
+  <script>
+    let studentname = ["sana", "misbah", "kinza", "kashaf", "muneeb", "yousuf", "shoaib", "huzaifa", "khuzaima"];
+    document.write("string type array: " + studentname + "<br>");
+
+    let names = new Array("misbah", "kashaf", "kinza", "muneeb", "yousuf");
+    document.write("string type array: " + names + "<br>");
+
+    let array1 = [];
+    document.write("empty array: " + array1 + "<br>");
+
+    let array2 = [223, 34, 4455, 6, 3, 78, 89];
+    document.write("int type array: " + array2 + "<br>");
+
+    let array3 = ["abdurrehman", "2002", "03023", 20, true, 6.5];
+    document.write("Mixed datatype array: " + array3 + "<br>");
+
+    document.write("Methods of array" + "<br>");
+
+    // for length of array
+    document.write("studentname.length: " + studentname.length + "<br>");
+
+    // for sorting the array
+    studentname.sort();
+    document.write("Sorted studentname: " + studentname + "<br>");
+
+    // for adding a value to the end of the array
+    studentname.push("abdurrehman");
+    document.write("After push: " + studentname + "<br>");
+
+    // for adding a value to the start of the array
+    studentname.unshift("kinza");
+    document.write("After unshift: " + studentname + "<br>");
+
+    // for removing a value from the end of the array
+    studentname.pop();
+    document.write("After pop: " + studentname + "<br>");
+
+    // for removing a value from the start of the array
+    studentname.shift();
+    document.write("After shift: " + studentname + "<br>");
+
+    // for finding the index position of an element in the array
+    document.write("Index of 'misbah': " + studentname.indexOf("misbah") + "<br>");
+
+    // for updating a value at a specific index
+    studentname[3] = "Ibrahim";
+    document.write("Updated studentname: " + studentname);
+  </script>
+</body>
+</html>
